@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Inventory Management Application (Java)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/class_roster_project.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Damon's Portfolio</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="all_projects.html">All Projects</a></li>
+								<!--
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="#">Log In</a></li>
+								<li><a href="#">Sign Up</a></li> -->
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Inventory Management Application</h2>
+								<p>See below for the secret ingredients.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Project Overview</h3>
+									<p>This was my first Java project longer than 100 or so lines of code, and was quite a bit harder than the class roster project. The goal was to build an inventory management system for a fictitious 
+										company so that they may better track parts and products. The application had the capability to add, modify, and delete parts 
+										and products, as well as a function to associate specified parts with products. I'm a bookworm, so I chose to model mine after 
+										a book printing company. </p>
+
+									<p>I was given a UML document which outlined the classes and dependencies. However, I was completely unfamiliar with the Java MVC (Model-View-
+										Controller) architecture so I watched a couple videos and took notes on the general structure. With this in hand, I started the project 
+										by building the GUI in SceneBuilder. At first I tried to do it in IntelliJ using the SceneBuilder plugin but it was super clunky and 
+										unresponsive, so I ended up using the SceneBuilder application on its own and just copying over the controller skeleton.</p>
+
+									<p>After building all of the screens, I built the classes according to the UML document. This was fairly easy and it was just a way for me to learn 
+										how to read UML docs, as well as familiarize myself with project structure. Then came the 'real' coding.</p>
+
+									<p>My most painful struggle here was TableViews and how they interact with ObservableLists. I had many, many tough times with not populating the table correctly, 
+										accidentally duplicating data, completely losing data...it was rough. But, I learned some important lessons along the way and was finally able to get 
+										all of my TableViews working correctly. </p>
+                                    
+                                    <p>The biggest takeaways from this project were encapsulation, inheritance, abstraction, and project management. Seeing how these concepts operated on a scale 
+										bigger scale than I have ever experienced was incredibly beneficial to me as a student and future programmer. Even more importantly though, breaking problems down 
+										into more manageable tasks was by far the biggest lesson I learned.</p> 
+										
+									<p>As students/new programmers, we hear this adage all the time: "Break down tasks and do them in bite-sized chunks". And honestly, 
+										this meant very little to me before this project. But while working on this, something comparatively much bigger than my previous projects, 
+										this is where I really started to <strong>internalize</strong> the advice and put it into practice. </p>
+
+									<p>View code <a href="https://github.com/dpheard7/Inventory_Mgmt_System" target="_blank" >here.</a>
+
+
+									<h3 class="major">Demo</h3>
+
+									<section class="features">
+                                        <video width="720" height="480" controls>
+                                            <source src="videos/Inventory_Mgmt_Sys.mp4" type="video/mp4">
+                                            <source src="videos/Inventory_Mgmt_Sys.mkv" type="video/mkv">
+                                          Your browser does not support the video tag.
+                                          </video> 
+								</div>
+
+                                <a href="all_projects.html" class="special">Back to All Projects</a>
+
+							</div> 
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>Email form is under construction. Feel free to <!--shoot me an email below, or you can--> reach out to me on LinkedIn. I've also included 
+							my GitHub below for those interested.</p>
+						<form method="post" 
+						action="contact-form-process.php"
+						enctype="multipart/form-data"
+						name="EmailForm">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+						<ul class="contact">
+							<li class="icon solid fa-home">
+								Baltimore, Maryland, USA<br/></li>
+							<li class="icon fa-linkedin"><a href="https://www.linkedin.com/in/damon-heard/" target="_blank">LinkedIn</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/dpheard7" target="_blank">GitHub</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Damon Heard. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+		</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

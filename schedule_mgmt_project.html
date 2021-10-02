@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Inventory Management Application (Java)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/class_roster_project.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Damon's Portfolio</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="all_projects.html">All Projects</a></li>
+                                <!--
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="#">Log In</a></li>
+								<li><a href="#">Sign Up</a></li> -->
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Class Roster Project</h2>
+								<p>See below for the secret ingredients.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Project Overview</h3>
+									<p>My biggest project to date. The scenario for this was that a fictitious company needed a scalable system to track their customers and customer 
+                                        appointments. They needed to be able to create, read, update, and delete both customers <strong>and</strong> appointments with this system, and 
+                                        this company operated in different countries so they had to see things in their local time zones. For this project, I had to learn the Java DAO 
+                                        design pattern and reinforce my foundation of the MVC architecture.</p>
+
+									<p>With the <a href="inventory_mgmt_project.html" target="_blank"> inventory management project</a> under my belt, the assumption 
+                                        was that I learned how to design and build Java programs. The assumption was...inaccurate.</p>
+
+									<p>There's a world of difference between having a UML diagram handed to you, and building one on your own, plus adding another huge 
+                                        component into it. This huge component was the JDBC (Java database connectivity) API which, when combined with the DAO design pattern, 
+                                        essentially allows a Java program to perform CRUD operations in a database. The database in this instance was MySQL, which I was a little 
+                                        familiar with before this class.</p>
+
+									<p>Setting up the driver and path variables was somewhat simple, but that's really where the easy stuff ended. I tried maybe a dozen different 
+                                        project configurations before settling on a modified DAO/MVC hybrid; I created a Queries class where I housed almost all SQL operations and 
+                                        used methods in the controller classes to initiate the CRUD operations based on GUI input. Something interesting I learned here as well was 
+                                        designing to prevent SQL injection. After all of this, I build about 90% of the GUI. </p>
+                                    
+                                    <p>Actually coding this was a nightmare at times, but overall, it really wasn't that bad and I learned so much. The biggest issue I had was with 
+                                        Java dates and times. The MySQL database stored times in UTC/GMT, but the application had to be set up to determine the user's locale by reading 
+                                        their system settings, then display all times in the user's time zone. This means times in the TableViews and in the drop-down menus (when a user 
+                                        creates a new appointment) had to be in the user's local time. </p>
+
+                                    <p>As if working with LocalDateTime and ZonedDateTime wasn't tough enough, there were also small logical and ancillary functions to write. I had to write 
+                                        logical checks to ensure no appointments overlapped, provide secondary language support for our fictional French-Canadian users, and write each 
+                                        successful and unsucessful login to a log.</p>
+
+                                    <p>I'll say it again, though: this project was a beast but I'm incredibly proud of it. The code is far from perfect, but I learned so much about Java and
+                                        designing programs, and it was a nice intro to working indirectly with databases.</p>
+
+                                    <p>View code <a href="https://github.com/dpheard7/Appointment-Scheduling-Assistant" target="_blank" >here.</a>
+
+
+									<h3 class="major">Demo</h3>
+
+									<section class="features">
+                                        <video width="720" height="480" controls>
+                                            <source src="videos/Appt_Mgmt_Sys.mp4" type="video/mp4">
+                                            <source src="videos/Appt_Mgmt_Sys.mkv" type="video/mkv">
+                                          Your browser does not support the video tag.
+                                          </video> 
+								</div>
+
+                                <a href="all_projects.html" class="special">Back to All Projects</a>
+
+							</div> 
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>Email form is under construction. Feel free to <!--shoot me an email below, or you can--> reach out to me on LinkedIn. I've also included 
+							my GitHub below for those interested.</p>
+						<form method="post" 
+						action="contact-form-process.php"
+						enctype="multipart/form-data"
+						name="EmailForm">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+						<ul class="contact">
+							<li class="icon solid fa-home">
+								Baltimore, Maryland, USA<br/></li>
+							<li class="icon fa-linkedin"><a href="https://www.linkedin.com/in/damon-heard/" target="_blank">LinkedIn</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/dpheard7" target="_blank">GitHub</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Damon Heard. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+		</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
